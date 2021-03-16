@@ -58,16 +58,40 @@
 		E73E993F2600BE5000ECF58E /* MobileNewsReader */ = {
 			isa = PBXGroup;
 			children = (
-				E73E99402600BE5000ECF58E /* AppDelegate.swift */,
-				E73E99422600BE5000ECF58E /* SceneDelegate.swift */,
-				E73E99442600BE5000ECF58E /* ViewController.swift */,
-				E73E99462600BE5000ECF58E /* Main.storyboard */,
+				E73E99572600BF0900ECF58E /* SupportingFiles */,
+				E73E99582600BF5E00ECF58E /* Screens */,
 				E73E994C2600BE5300ECF58E /* Assets.xcassets */,
-				E73E994E2600BE5400ECF58E /* LaunchScreen.storyboard */,
-				E73E99512600BE5400ECF58E /* Info.plist */,
 				E73E99492600BE5000ECF58E /* MobileNewsReader.xcdatamodeld */,
 			);
 			path = MobileNewsReader;
+			sourceTree = "<group>";
+		};
+		E73E99572600BF0900ECF58E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E73E99402600BE5000ECF58E /* AppDelegate.swift */,
+				E73E99422600BE5000ECF58E /* SceneDelegate.swift */,
+				E73E99512600BE5400ECF58E /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E73E99582600BF5E00ECF58E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E73E99592600BFB800ECF58E /* Main */,
+				E73E994E2600BE5400ECF58E /* LaunchScreen.storyboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E73E99592600BFB800ECF58E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E73E99442600BE5000ECF58E /* ViewController.swift */,
+				E73E99462600BE5000ECF58E /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +314,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AGH5RSM234;
-				INFOPLIST_FILE = MobileNewsReader/Info.plist;
+				INFOPLIST_FILE = MobileNewsReader/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.emblersApps.MobileNewsReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +333,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AGH5RSM234;
-				INFOPLIST_FILE = MobileNewsReader/Info.plist;
+				INFOPLIST_FILE = MobileNewsReader/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,7 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.emblersApps.MobileNewsReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
