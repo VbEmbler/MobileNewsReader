@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SpX-p2-zKo">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Source name-->
+        <scene sceneID="Wbt-y1-cte">
+            <objects>
+                <tableViewController id="qbq-Af-rgw" customClass="ChannelNewsListTableViewController" customModule="MobileNewsReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SEF-yo-HRa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsTableViewCell" id="F3d-n2-xVY">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F3d-n2-xVY" id="Qkp-bA-ji3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ZGn-G5-SZE" kind="presentation" identifier="newsSeque" modalPresentationStyle="fullScreen" id="Gra-HD-cTC"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qbq-Af-rgw" id="GDl-72-2v5"/>
+                            <outlet property="delegate" destination="qbq-Af-rgw" id="x07-eN-vp7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Source name" id="CJa-yl-lAK"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LI6-ka-zM1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3714.4000000000001" y="136.28185907046478"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nmj-Pu-sz8">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bH2-Dr-cQU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SpX-p2-zKo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qk4-2h-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qbq-Af-rgw" kind="relationship" relationship="rootViewController" id="hvS-1W-AGM"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="2775.1999999999998" y="136.28185907046478"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="6r5-US-J8s">
+            <objects>
+                <viewControllerPlaceholder storyboardName="News" id="ZGn-G5-SZE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PCF-Hl-ze6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pkY-q6-ekK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4372" y="-1"/>
+        </scene>
+    </scenes>
+</document>
