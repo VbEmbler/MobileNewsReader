@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "AllChannelsTableViewController.prepare(for:sender:):AllChannelsTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "viewcontroller">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AllChannelsTableViewController.viewWillAppear(_:):AllChannelsTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "NetworkMonitor.shared.isConnected">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AllChannelsTableViewController.setSources():AllChannelsTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "NetworkMonitor.shared.isConnected">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AllChannelsTableViewController.viewDidLoad():AllChannelsTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = " navigationController?.navigationItem.title">
+            </PersistentString>
+            <PersistentString
+               value = "self.parent">
+            </PersistentString>
+            <PersistentString
+               value = "NetworkMonitor.shared.isConnected ">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in NetworkManager.getArticles(sourceId:completionHandler:):NetwrokManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sourceId">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AllChannelsTableViewController.tableView(_:cellForRowAt:):AllChannelsTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.favouriteImageView.gestureRecognizers?.count">
+            </PersistentString>
+            <PersistentString
+               value = "allChannels.sources[indexPath.row].id">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ChannelTableViewCell.imageTapped(gesture:):ChannelTableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "image.image ">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "StorageManager.editSourceFavouriteProperty(row:isFavourite:):StorageManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sourcesStorage.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ChannelNewsListTableViewController.tableView(_:cellForRowAt:):ChannelNewsListTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "articles.articles[indexPath.row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SearchTableViewController.tableView(_:cellForRowAt:):SearchTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "articles.articles.count">
+            </PersistentString>
+            <PersistentString
+               value = "articles.articles[indexPath.row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

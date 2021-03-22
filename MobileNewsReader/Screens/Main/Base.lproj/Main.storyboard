@@ -1,27 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VT1-La-gcd">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="eSW-hP-qvv">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MobileNewsReader" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationController id="VT1-La-gcd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cf4-bM-HIP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Psq-lB-h56" kind="relationship" relationship="rootViewController" id="Lcq-XP-apC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GnW-Wd-ygh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133" y="139"/>
+            <point key="canvasLocation" x="-1729" y="-211"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qJE-ab-Aba">
+            <objects>
+                <tabBarController id="Psq-lB-h56" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NJx-8f-t7i"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xWC-Yf-BPF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Oah-6a-QBr" kind="relationship" relationship="viewControllers" id="h7C-XI-n9Z"/>
+                        <segue destination="DxZ-IB-M1N" kind="relationship" relationship="viewControllers" id="lO5-oA-Nh8"/>
+                        <segue destination="kWf-mx-zAL" kind="relationship" relationship="viewControllers" id="gfw-EC-05s"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W2H-Al-9u1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-694" y="-191"/>
+        </scene>
+        <!--AllChannels-->
+        <scene sceneID="qle-5L-iS2">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AllChannels" storyboardName="AllChannels" referencedIdentifier="AllChannels" id="Oah-6a-QBr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="All channels" image="list.dash" catalog="system" id="xRR-Pp-oSj"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K21-W5-yin" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="-408"/>
+        </scene>
+        <!--FavouriteChannels-->
+        <scene sceneID="4Bb-vj-VMT">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="FavouriteChannels" storyboardName="FavouriteChannels" id="DxZ-IB-M1N" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favourite channels" image="star.fill" catalog="system" id="MDR-1f-FlH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ps-ht-7Vl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="-221"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="Jls-4G-QBE">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Search" storyboardName="Search" referencedIdentifier="Search" id="kWf-mx-zAL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search channels" image="magnifyingglass" catalog="system" id="X5a-9m-eHK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZe-Sz-UCE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-15" y="-42"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="list.dash" catalog="system" width="64" height="42"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="star.fill" catalog="system" width="64" height="58"/>
+    </resources>
 </document>
